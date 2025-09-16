@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+    
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 1200px;
+            height: 700px;
+            
+            margin: 30px auto;
+        }
+        h1{
+            margin-left: 550px;
+        }
+        table{
+            height: 700px;
+        }
+        .skyblue{
+            line-height: 50px;
+        }
+        thead button{
+            width: 240px;
+            background-color: orange;
+            height: 30px;
+            border: none;
+            color: white;
+        }
+
+        thead input{
+            width: 650px;
+        }
+
+        span{
+            display: block;
+            width: 240px;
+            text-align: center;
+        }
+
+        
+
+        .skyblue td{
+            width: 240px;
+        }
+        tbody td{
+            text-align: center;
+        }
+
+        .sfzh{
+            width: 960px;
+        }
+        tbody tr{
+            line-height: 150px;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <h1>助学贷款还款</h1>
+        <form action="">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th><span>贷款金额</span></th>
+                        <th colspan="3"><input type="text" placeholder="请输入贷款金额:" id="price" ></th>
+                        <th><button type="button" onclick="sumbit()">计算</button></th>
+
+                    </tr>
+                </thead>
+
+                <tbody >
+                    <tr class="skyblue">
+                        <td>身份证号</td>
+                        <td colspan="4">
+                            <input type="text" name="" id="" placeholder="请输入身份证号" class="sfzh">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>贷款利率</td>
+                        <td colspan="4">年化利率 3.95%</td>
+                    </tr>
+
+                    <tr>
+                        <td>贷款期限</td>
+                        <td colspan="4">最高180期（可一次还清，也可多次还清）</td>
+                    </tr>
+
+                    <tr>
+                        <td>当前还款状态</td>
+                        <td colspan="4">未逾期</td>
+                    </tr>
+
+                    <tr>
+                        <td>逾期还款</td>
+                        <td colspan="4">利率：0.6%/月</td>
+                    </tr>
+
+                    <tr>
+                        <td>每期应还</td>
+                        <td colspan="4"  id="sum"></td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </form>
+    </div>
+</body>
+
+<script>
+       function sumbit(){
+         let num = document.getElementById('price').value;
+        num = parseInt(num);
+        let sum = document.getElementById('sum');
+        let sumValue = (num*(1+0.0395))/12; 
+        sum.textContent = sumValue;
+       }
+
+    
+
+
+
+</script>
+</html>

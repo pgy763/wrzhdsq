@@ -1,0 +1,170 @@
+{
+  "homeInfo": {
+    "title": "首页",
+    "href": "page/home.html"
+  },
+  "logoInfo": {
+    "title": "助学贷款",
+    "image": "images/logo.png",
+    "href": ""
+  },
+  "menuInfo": [
+    {
+      "title": "常规管理",
+      "icon": "fa fa-address-book",
+      "href": "",
+      "target": "_self",
+      "child": [
+        {
+          "title": "首页",
+          "href": "page/home.html",
+          "icon": "fa fa-home",
+          "target": "_self"
+        },
+        {
+          "title": "贷款申请",
+          "href": "",
+          "icon": "fa fa-group",
+          "target": "_self",
+          "child": [
+          {
+            "title": "类型选择",
+            "href": "dksq/kindselect.html",
+            "icon": "fa fa-plus-square-o",
+            "target": "_self"
+          }, {
+            "title": "申请表单",
+            "href": "dksq/kindaddition.html",
+            "icon": "fa fa-search",
+            "target": "_self"
+          },
+          {
+            "title": "资料上传",
+            "href": "dksq/kindsumbit.html",
+            "icon": "fa fa-search",
+            "target": "_self"
+          }
+        ]
+        },
+        
+        {
+          "title": "审核进度",
+          "href": "",
+          "icon": "fa fa-male",
+          "target": "_self",
+          "child": [
+            {
+              "title": "进度查询",
+              "href": "shjd/shjdjdcx.html",
+              "icon": "fa fa-plus-circle",
+              "target": "_self"
+            }, {
+              "title": "结果查看",
+              "href": "shjd/shjdjgck.html",
+              "icon": "fa fa-search-plus",
+              "target": "_self"
+            }, {
+              "title": "重新申请",
+              "href": "shjd/shjdcxsq.html",
+              "icon": "fa fa-bar-chart",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "合同管理",
+          "href": "",
+          "icon": "fa fa-institution",
+          "target": "_self",
+          "child": [
+            {
+              "title": "合同查看",
+              "href": "htgl/htglhtck.html",
+              "icon": "fa fa-plus-square-o",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "还款管理",
+          "href": "",
+          "icon": "fa fa-trophy",
+          "target": "_self",
+          "child": [
+            {
+              "title": "还款计划",
+              "href": "hkgl1/hkgl1hkjh.html",
+              "icon": "fa fa-plus-square-o",
+              "target": "_self"
+            }, {
+              "title": "还款记录",
+              "href": "hkgl1/hkgl1hkjl.html",
+              "icon": "fa fa-search",
+              "target": "_self"
+            },
+            {
+              "title": "还款计算",
+              "href": "hkgl1/hkgl1hkjs.html",
+              "icon": "fa fa-search",
+              "target": "_self"
+            }
+          
+          ]
+        },
+        {
+          "title": "辅助功能",
+          "href": "",
+          "icon": "fa fa-paw",
+          "target": "_self",
+          "child": [
+            {
+              "title": "意见反馈",
+              "href": "fzgn/sydh.html",
+              "icon": "fa fa-plus-circle",
+              "target": "_self"
+            }, {
+              "title": "常见问题",
+              "href": "fzgn/cjwt.html",
+              "icon": "fa fa-search-plus",
+              "target": "_self"
+            }, {
+              "title": "征信科普",
+              "href": "fzgn/zxkp.html",
+              "icon": "fa fa-search-plus",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "管理员",
+          "href": "",
+          "icon": "fa fa-paw",
+          "target": "_self",
+          "child": [
+            {
+              "title": "用户管理",
+              "href": "glymk/glyh.html",
+              "icon": "fa fa-plus-circle",
+              "target": "_self"
+            },
+            {
+              "title": "进行打款",
+              "href": "glymk/jxdk.html",
+              "icon": "fa fa-plus-circle",
+              "target": "_self"
+            },
+            {
+              
+              "title": "用户分布",
+              "href": "glymk/statisMember.html",
+              "icon": "fa fa-plus-circle",
+              "target": "_self"
+            
+            }
+          ]
+        }
+        
+      ]
+    }
+  ]
+}
