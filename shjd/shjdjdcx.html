@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demo</title>
+  <!-- 请勿在项目正式环境中引用该 layui.css 地址 -->
+  <link href="//unpkg.com/layui@2.11.6/dist/css/layui.css" rel="stylesheet">
+
+  <style>
+    span{
+        color: red;
+    }
+    .layui-timeline{
+        margin-left: 100px;
+        margin-top: 50px;
+        
+    }
+    .timeline-check {
+        position: relative;
+    }
+    .layui-timeline-axis {
+        color: green;
+    }
+    h1{
+        margin-left: 600px;
+    }
+
+    
+    
+    .timeline-check::after {
+        content: "✓";
+        position: absolute;
+        color: red;
+        font-size: 12px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+<h1>2025-2026学年助学贷款</h1>
+<div class="layui-timeline">
+    
+  <div class="layui-timeline-item">
+    <i class="layui-icon layui-timeline-axis timeline-check"></i>
+    <div class="layui-timeline-content layui-text">
+      <h3 class="layui-timeline-title">8月27日</h3>
+      <p>
+        在线提交
+      </p>
+    </div>
+  </div>
+  <div class="layui-timeline-item">
+    <i class="layui-icon layui-timeline-axis timeline-check"></i>
+    <div class="layui-timeline-content layui-text">
+      <h3 class="layui-timeline-title">8月27日</h3>
+      <p>已现场受理</p>
+      
+    </div>
+  </div>
+  <div class="layui-timeline-item">
+    <i class="layui-icon layui-timeline-axis timeline-check"></i>
+    <div class="layui-timeline-content layui-text">
+      <h3 class="layui-timeline-title">8月27日</h3>
+      <p>
+        生成电子合同 <br>
+        <span><a href="http://127.0.0.1:5500/rjzhsjzy/dksq/kindsumbit.html">下载电子合同</a></span>
+      </p>
+    </div>
+  </div>
+
+  <div class="layui-timeline-item">
+    <i class="layui-icon layui-timeline-axis timeline-check"></i>
+    <div class="layui-timeline-content layui-text">
+      <h3 class="layui-timeline-title">8月27日</h3>
+      <p>受理证明已盖章</p>
+      
+    </div>
+  </div>
+
+  <div class="layui-timeline-item">
+    <i class="layui-icon layui-timeline-axis timeline-check"></i>
+    <div class="layui-timeline-content layui-text">
+      <h3 class="layui-timeline-title">9月1日</h3>
+      <p>学校录入回执</p>
+      
+    </div>
+  </div>
+
+  <div class="layui-timeline-item">
+    <i class="layui-icon layui-timeline-axis timeline-check"></i>
+    <div class="layui-timeline-content layui-text">
+      <h3 class="layui-timeline-title">9月1日</h3>
+      <p>开行审批中</p>
+      
+    </div>
+  </div>
+
+  <div class="layui-timeline-item">
+    <i class="layui-icon layui-timeline-axis"></i>
+    <div class="layui-timeline-content layui-text">
+        
+      
+      <p>审批通过</p>
+      
+    </div>
+  </div>
+
+  <div class="layui-timeline-item">
+    <i class="layui-icon layui-timeline-axis"></i>
+    <div class="layui-timeline-content layui-text">
+        
+      
+      <p>已发放</p>
+      
+    </div>
+  </div>
+  
+</div>
+ 
+</body>
+</html>

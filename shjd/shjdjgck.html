@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demo</title>
+  <!-- 请勿在项目正式环境中引用该 layui.css 地址 -->
+  <link href="//unpkg.com/layui@2.11.6/dist/css/layui.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .box{
+        width: 1200px;
+        height: 800px;
+        margin: 30px auto;
+    }
+
+    table{
+        width: 1200px;
+        height: 800px;
+    }
+    .layui-progress{
+        display: flex;
+    }
+    
+    .layui-progress-bar{
+        width: 70%;
+    }
+    table th{
+        text-align: center;
+        
+    }
+    table td{
+        text-align: center;
+    }
+    
+    
+  </style>
+</head>
+<body>
+    <div class="box">
+        <table border="1" class= "table table-bordered">
+           <thead>
+            <th>
+                <span>当前结果状态:</span>
+            </th>
+
+            <th><div>您的贷款申请仍在审核中，暂未生成最终审批结果，请耐心等待</div></th>
+           </thead>
+
+           <tbody>
+
+            <tr>
+                <td><span>当前审核环节</span></td>
+                <td><span>当前处于【材料二次复核】环节，需确认您补充的银行流水真实性，复核完成后进入最终审批</span></td>
+                
+            </tr>
+
+            <tr>
+                <td>审核更新时间</td>
+                <td>最近更新时间：2024-05-21 14:15（材料复核已完成 30%）</td>
+            </tr>
+
+            <tr>
+                <td>预计出结果时间</td>
+                <td>若审核过程中无需补充材料，预计2个月内出结果，具体以实际进度为准</td>
+            </tr>
+            <tr>
+                <td><span>审核进度</span></td>
+                <td>
+                    
+                    <div class="layui-progress layui-progress-big" lay-showpercent="true">
+                        <div class="layui-progress-bar" lay-percent="70%"></div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>结果通知方式</td>
+                <td>审核结果出具后，将通过【短信】方式告知，建议您保持手机畅通</td>
+            </tr>
+
+            <tr>
+                <td>避免重复申请提示</td>
+                <td>审核期间请勿重复提交同一贷款申请，否则可能导致审核延迟</td>
+            </tr>
+
+            <tr>
+                <td class="zx">咨询与疑问解答</td>
+                <td>进度咨询：若您想了解审核细节，可拨打客服热线 400-XXX-XXXX（工作日 9:00-18:00），提供身份证号（1408xxxxxxxxxxxx）即可查询
+                    <br>
+                    疑问反馈：若您认为审核进度异常，可拨打客服热线 400-XXX-XXXX（工作日 9:00-18:00），工作人员将在 1 个工作日内回复
+                </td>
+
+            </tr>
+
+            
+           </tbody>
+
+
+           
+        </table>
+    </div>
+  
+<!-- 请勿在项目正式环境中引用该 layui.js 地址 -->
+<script src="//unpkg.com/layui@2.11.6/dist/layui.js"></script>
+ 
+</body>
+</html>
